@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "z6ksmPHs+3SbiWpcxGmT6kQHUhKhI/KA06kBY96vSzfI+SvyjGVgF7olOSaQDQkySBby4m03DICVLG6jfUy+CA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\felip\\Desktop\\Proyecto\\VetHouse.App\\VetHouse.App.Persistencia\\VetHouse.App.Persistencia.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\felip\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\felip\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
