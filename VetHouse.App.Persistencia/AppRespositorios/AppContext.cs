@@ -13,5 +13,14 @@ namespace VetHouse.App.Persistencia
         public DbSet<Pet> Pet {get;set;}
         public DbSet<Vet> Vet {get;set;}
         public DbSet<VitalSign> VitalSign {get;set;}
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            if(!optionsBuilder.IsConfigured)
+            {
+                optionsBuilder
+                .useSqlServer("Data Source = (local db)\\MSSQLLocalDB; Initial Catalog = VetHousetData")
+            }
+        }
     }
 }
