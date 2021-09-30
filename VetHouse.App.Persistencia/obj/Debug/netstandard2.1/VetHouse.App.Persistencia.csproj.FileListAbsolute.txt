@@ -1,0 +1,12 @@
+C:\Users\felip\Desktop\Proyecto\VetHouse.App\VetHouse.App.Persistencia\obj\Debug\netstandard2.1\VetHouse.App.Persistencia.csprojAssemblyReference.cache
+C:\Users\felip\Desktop\Proyecto\VetHouse.App\VetHouse.App.Persistencia\obj\Debug\netstandard2.1\VetHouse.App.Persistencia.AssemblyInfoInputs.cache
+C:\Users\felip\Desktop\Proyecto\VetHouse.App\VetHouse.App.Persistencia\obj\Debug\netstandard2.1\VetHouse.App.Persistencia.AssemblyInfo.cs
+C:\Users\felip\Desktop\Proyecto\VetHouse.App\VetHouse.App.Persistencia\obj\Debug\netstandard2.1\VetHouse.App.Persistencia.csproj.CoreCompileInputs.cache
+C:\Users\felip\Desktop\Proyecto\VetHouse.App\VetHouse.App.Persistencia\bin\Debug\netstandard2.1\VetHouse.App.Persistencia.deps.json
+C:\Users\felip\Desktop\Proyecto\VetHouse.App\VetHouse.App.Persistencia\bin\Debug\netstandard2.1\VetHouse.App.Persistencia.dll
+C:\Users\felip\Desktop\Proyecto\VetHouse.App\VetHouse.App.Persistencia\bin\Debug\netstandard2.1\VetHouse.App.Persistencia.pdb
+C:\Users\felip\Desktop\Proyecto\VetHouse.App\VetHouse.App.Persistencia\bin\Debug\netstandard2.1\VetHouse.App.Dominio.dll
+C:\Users\felip\Desktop\Proyecto\VetHouse.App\VetHouse.App.Persistencia\bin\Debug\netstandard2.1\VetHouse.App.Dominio.pdb
+C:\Users\felip\Desktop\Proyecto\VetHouse.App\VetHouse.App.Persistencia\obj\Debug\netstandard2.1\VetHouse.App.Persistencia.csproj.CopyComplete
+C:\Users\felip\Desktop\Proyecto\VetHouse.App\VetHouse.App.Persistencia\obj\Debug\netstandard2.1\VetHouse.App.Persistencia.dll
+C:\Users\felip\Desktop\Proyecto\VetHouse.App\VetHouse.App.Persistencia\obj\Debug\netstandard2.1\VetHouse.App.Persistencia.pdb

@@ -2068,6 +2068,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "VetHouse.App.Dominio/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/VetHouse.App.Dominio.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VetHouse.App.Dominio.dll": {}
+        }
       }
     }
   },
@@ -7236,6 +7246,11 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "VetHouse.App.Dominio/1.0.0": {
+      "type": "project",
+      "path": "../VetHouse.App.Dominio/VetHouse.App.Dominio.csproj",
+      "msbuildProject": "../VetHouse.App.Dominio/VetHouse.App.Dominio.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -7243,7 +7258,8 @@
       "Microsoft.EntityFrameworkCore >= 5.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.0",
-      "Microsoft.EntityFrameworkCore.Tools >= 5.0.0"
+      "Microsoft.EntityFrameworkCore.Tools >= 5.0.0",
+      "VetHouse.App.Dominio >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -7269,7 +7285,11 @@
       },
       "frameworks": {
         "netstandard2.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\felip\\Desktop\\Proyecto\\VetHouse.App\\VetHouse.App.Dominio\\VetHouse.App.Dominio.csproj": {
+              "projectPath": "C:\\Users\\felip\\Desktop\\Proyecto\\VetHouse.App\\VetHouse.App.Dominio\\VetHouse.App.Dominio.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

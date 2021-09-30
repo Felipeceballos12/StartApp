@@ -1,0 +1,9 @@
+C:\Users\felip\Desktop\Proyecto\VetHouse.App\VetHouse.App.Dominio\obj\Debug\netstandard2.0\VetHouse.App.Dominio.csprojAssemblyReference.cache
+C:\Users\felip\Desktop\Proyecto\VetHouse.App\VetHouse.App.Dominio\obj\Debug\netstandard2.0\VetHouse.App.Dominio.AssemblyInfoInputs.cache
+C:\Users\felip\Desktop\Proyecto\VetHouse.App\VetHouse.App.Dominio\obj\Debug\netstandard2.0\VetHouse.App.Dominio.AssemblyInfo.cs
+C:\Users\felip\Desktop\Proyecto\VetHouse.App\VetHouse.App.Dominio\obj\Debug\netstandard2.0\VetHouse.App.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\felip\Desktop\Proyecto\VetHouse.App\VetHouse.App.Dominio\bin\Debug\netstandard2.0\VetHouse.App.Dominio.deps.json
+C:\Users\felip\Desktop\Proyecto\VetHouse.App\VetHouse.App.Dominio\bin\Debug\netstandard2.0\VetHouse.App.Dominio.dll
+C:\Users\felip\Desktop\Proyecto\VetHouse.App\VetHouse.App.Dominio\bin\Debug\netstandard2.0\VetHouse.App.Dominio.pdb
+C:\Users\felip\Desktop\Proyecto\VetHouse.App\VetHouse.App.Dominio\obj\Debug\netstandard2.0\VetHouse.App.Dominio.dll
+C:\Users\felip\Desktop\Proyecto\VetHouse.App\VetHouse.App.Dominio\obj\Debug\netstandard2.0\VetHouse.App.Dominio.pdb

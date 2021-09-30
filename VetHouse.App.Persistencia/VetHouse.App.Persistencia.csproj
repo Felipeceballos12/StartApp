@@ -17,4 +17,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\VetHouse.App.Dominio\VetHouse.App.Dominio.csproj" />
+  </ItemGroup>
+
 </Project>
