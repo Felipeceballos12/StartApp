@@ -19,7 +19,7 @@ namespace VetHouse.App.Persistencia
             if(!optionsBuilder.IsConfigured)
             {
                 optionsBuilder
-                .UseSqlServer("Data Source = (local db)\\MSSQLLocalDB; Initial Catalog = VetHousetData");
+                .UseSqlServer("Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog = VetHousetData");
             }
         }
     }
