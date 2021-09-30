@@ -1,4 +1,5 @@
 ﻿using System;
+using VetHouse.App.Dominio;
 
 namespace VetHouse.App.Consola
 {
