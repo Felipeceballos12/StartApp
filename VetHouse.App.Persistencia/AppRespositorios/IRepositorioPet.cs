@@ -9,10 +9,10 @@ namespace VetHouse.App.Persistencia
 
         Pet AddPet(Pet pet);
 
+        void DeletePet(int IdPet);
+
+        Pet GetPet(int IdPet);
+
         Pet UpdatePet(Pet pet);
-
-        void DeletePet(Pet pet);
-
-        Pet GetPet(Pet pet);
     }
 }
