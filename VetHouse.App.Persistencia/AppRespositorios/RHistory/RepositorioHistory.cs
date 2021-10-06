@@ -14,10 +14,10 @@ namespace VetHouse.App.Persistencia
             _appContext = appContext;
         }
 
-        string GetDiagnose(int IdHistory)
+        History IRepositorioHistory.GetDiagnose(int IdHistory)
         {
-            var HistoryFound = _appContext.History.FirstOrDefault(h => h.Id == IdHistory);
-            return HistoryFound.Diagnose;
+            var historyFound = _appContext.History.FirstOrDefault(h => h.Id == IdHistory);
+            return historyFound;
         }
     }
 }

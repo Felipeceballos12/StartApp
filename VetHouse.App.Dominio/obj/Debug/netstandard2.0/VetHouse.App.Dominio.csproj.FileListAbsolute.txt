@@ -16,3 +16,12 @@ F:\8. Universidad\Misión Tic 2022\Ciclo 3\Desarrollo de Software\Proyecto\GitHu
 F:\8. Universidad\Misión Tic 2022\Ciclo 3\Desarrollo de Software\Proyecto\GitHub\StartApp\VetHouse.App.Dominio\obj\Debug\netstandard2.0\VetHouse.App.Dominio.csproj.CoreCompileInputs.cache
 F:\8. Universidad\Misión Tic 2022\Ciclo 3\Desarrollo de Software\Proyecto\GitHub\StartApp\VetHouse.App.Dominio\obj\Debug\netstandard2.0\VetHouse.App.Dominio.dll
 F:\8. Universidad\Misión Tic 2022\Ciclo 3\Desarrollo de Software\Proyecto\GitHub\StartApp\VetHouse.App.Dominio\obj\Debug\netstandard2.0\VetHouse.App.Dominio.pdb
+C:\Users\cebal\OneDrive\Documents\Code\MinTic-2021\StartApp\VetHouse.App.Dominio\bin\Debug\netstandard2.0\VetHouse.App.Dominio.deps.json
+C:\Users\cebal\OneDrive\Documents\Code\MinTic-2021\StartApp\VetHouse.App.Dominio\bin\Debug\netstandard2.0\VetHouse.App.Dominio.dll
+C:\Users\cebal\OneDrive\Documents\Code\MinTic-2021\StartApp\VetHouse.App.Dominio\bin\Debug\netstandard2.0\VetHouse.App.Dominio.pdb
+C:\Users\cebal\OneDrive\Documents\Code\MinTic-2021\StartApp\VetHouse.App.Dominio\obj\Debug\netstandard2.0\VetHouse.App.Dominio.csprojAssemblyReference.cache
+C:\Users\cebal\OneDrive\Documents\Code\MinTic-2021\StartApp\VetHouse.App.Dominio\obj\Debug\netstandard2.0\VetHouse.App.Dominio.AssemblyInfoInputs.cache
+C:\Users\cebal\OneDrive\Documents\Code\MinTic-2021\StartApp\VetHouse.App.Dominio\obj\Debug\netstandard2.0\VetHouse.App.Dominio.AssemblyInfo.cs
+C:\Users\cebal\OneDrive\Documents\Code\MinTic-2021\StartApp\VetHouse.App.Dominio\obj\Debug\netstandard2.0\VetHouse.App.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\cebal\OneDrive\Documents\Code\MinTic-2021\StartApp\VetHouse.App.Dominio\obj\Debug\netstandard2.0\VetHouse.App.Dominio.dll
+C:\Users\cebal\OneDrive\Documents\Code\MinTic-2021\StartApp\VetHouse.App.Dominio\obj\Debug\netstandard2.0\VetHouse.App.Dominio.pdb

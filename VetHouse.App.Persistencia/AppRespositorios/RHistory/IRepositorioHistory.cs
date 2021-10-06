@@ -5,6 +5,6 @@ namespace VetHouse.App.Persistencia
 {
     public interface IRepositorioHistory
     {
-        string GetDiagnose(int IdHistory);
+        History GetDiagnose(int IdHistory);
     }
 }
