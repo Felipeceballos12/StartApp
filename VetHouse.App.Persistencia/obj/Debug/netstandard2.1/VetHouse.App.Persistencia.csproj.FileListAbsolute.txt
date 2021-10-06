@@ -10,3 +10,15 @@ C:\Users\felip\Desktop\Proyecto\VetHouse.App\VetHouse.App.Persistencia\bin\Debug
 C:\Users\felip\Desktop\Proyecto\VetHouse.App\VetHouse.App.Persistencia\obj\Debug\netstandard2.1\VetHouse.App.Persistencia.csproj.CopyComplete
 C:\Users\felip\Desktop\Proyecto\VetHouse.App\VetHouse.App.Persistencia\obj\Debug\netstandard2.1\VetHouse.App.Persistencia.dll
 C:\Users\felip\Desktop\Proyecto\VetHouse.App\VetHouse.App.Persistencia\obj\Debug\netstandard2.1\VetHouse.App.Persistencia.pdb
+F:\8. Universidad\Misión Tic 2022\Ciclo 3\Desarrollo de Software\Proyecto\GitHub\StartApp\VetHouse.App.Persistencia\obj\Debug\netstandard2.1\VetHouse.App.Persistencia.csprojAssemblyReference.cache
+F:\8. Universidad\Misión Tic 2022\Ciclo 3\Desarrollo de Software\Proyecto\GitHub\StartApp\VetHouse.App.Persistencia\obj\Debug\netstandard2.1\VetHouse.App.Persistencia.AssemblyInfoInputs.cache
+F:\8. Universidad\Misión Tic 2022\Ciclo 3\Desarrollo de Software\Proyecto\GitHub\StartApp\VetHouse.App.Persistencia\obj\Debug\netstandard2.1\VetHouse.App.Persistencia.AssemblyInfo.cs
+F:\8. Universidad\Misión Tic 2022\Ciclo 3\Desarrollo de Software\Proyecto\GitHub\StartApp\VetHouse.App.Persistencia\obj\Debug\netstandard2.1\VetHouse.App.Persistencia.csproj.CoreCompileInputs.cache
+F:\8. Universidad\Misión Tic 2022\Ciclo 3\Desarrollo de Software\Proyecto\GitHub\StartApp\VetHouse.App.Persistencia\obj\Debug\netstandard2.1\VetHouse.App.Persistencia.dll
+F:\8. Universidad\Misión Tic 2022\Ciclo 3\Desarrollo de Software\Proyecto\GitHub\StartApp\VetHouse.App.Persistencia\obj\Debug\netstandard2.1\VetHouse.App.Persistencia.pdb
+F:\8. Universidad\Misión Tic 2022\Ciclo 3\Desarrollo de Software\Proyecto\GitHub\StartApp\VetHouse.App.Persistencia\bin\Debug\netstandard2.1\VetHouse.App.Persistencia.deps.json
+F:\8. Universidad\Misión Tic 2022\Ciclo 3\Desarrollo de Software\Proyecto\GitHub\StartApp\VetHouse.App.Persistencia\bin\Debug\netstandard2.1\VetHouse.App.Persistencia.dll
+F:\8. Universidad\Misión Tic 2022\Ciclo 3\Desarrollo de Software\Proyecto\GitHub\StartApp\VetHouse.App.Persistencia\bin\Debug\netstandard2.1\VetHouse.App.Persistencia.pdb
+F:\8. Universidad\Misión Tic 2022\Ciclo 3\Desarrollo de Software\Proyecto\GitHub\StartApp\VetHouse.App.Persistencia\bin\Debug\netstandard2.1\VetHouse.App.Dominio.dll
+F:\8. Universidad\Misión Tic 2022\Ciclo 3\Desarrollo de Software\Proyecto\GitHub\StartApp\VetHouse.App.Persistencia\bin\Debug\netstandard2.1\VetHouse.App.Dominio.pdb
+F:\8. Universidad\Misión Tic 2022\Ciclo 3\Desarrollo de Software\Proyecto\GitHub\StartApp\VetHouse.App.Persistencia\obj\Debug\netstandard2.1\VetHouse.App.Persistencia.csproj.CopyComplete

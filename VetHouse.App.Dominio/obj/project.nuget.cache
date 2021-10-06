@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "Gpr5texaeq28yjZg3HGVvZVpS0gA+GS3pFk+X12pjJapLh0W9RIQ4dTnHGC0acRfHn0CitrRrpnnkrUiqNomzw==",
+  "dgSpecHash": "SNdABY/cRF5du8Xs/z88sQz+Hk8yuG+IXHd8yaYCR9xmPzm8JKBWm8GrxL6bS6rjUF7j+IqcGg6r6JRv+hJyrw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\felip\\Desktop\\Proyecto\\VetHouse.App\\VetHouse.App.Dominio\\VetHouse.App.Dominio.csproj",
+  "projectFilePath": "F:\\8. Universidad\\Misión Tic 2022\\Ciclo 3\\Desarrollo de Software\\Proyecto\\GitHub\\StartApp\\VetHouse.App.Dominio\\VetHouse.App.Dominio.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\felip\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\felip\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\rdkar\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\rdkar\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
   "logs": []
 }
