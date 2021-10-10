@@ -27,7 +27,7 @@ namespace VetHouse.App.Persistencia
         }
         void IRepositorioVet.DeleteVet(int idVet)
         {
-            var vetEncontrado = _appContext.Vet.FirstOrDefault(av => av.Id == idVet);
+            var vetEncontrado = _appContext.Vet.FirstOrDefault(v => v.Id == idVet);
             if (vetEncontrado == null)
                 return;
             _appContext.Vet.Remove(vetEncontrado);
@@ -39,11 +39,11 @@ namespace VetHouse.App.Persistencia
         }
         Vet IRepositorioVet.GetVet(int idVet)
         {
-            return _appContext.Vet.FirstOrDefault(av => av.Id == idVet);
+            return _appContext.Vet.FirstOrDefault(v => v.Id == idVet);
         }
         Vet IRepositorioVet.UpdateVet(Vet vet)
         {
-            var vetEncontrado = _appContext.Vet.FirstOrDefault(av => av.Id == vet.Id);
+            var vetEncontrado = _appContext.Vet.FirstOrDefault(v => v.Id == vet.Id);
             if (vetEncontrado!=null)
             {
                 vetEncontrado.Name=vet.Name;
@@ -51,8 +51,10 @@ namespace VetHouse.App.Persistencia
                 vetEncontrado.PhoneNumber=vet.PhoneNumber;
                 vetEncontrado.Gender=vet.Gender;
                 vetEncontrado.Email=vet.Email;    
+                vetEncontrado.DateBirth=vet.DateBirth;    
                 vetEncontrado.RegisterRethus = vet.RegisterRethus;
                 vetEncontrado.Specialty=vet.Specialty;
+
             }
             return vetEncontrado;
         }

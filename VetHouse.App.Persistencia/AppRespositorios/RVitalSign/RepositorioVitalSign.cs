@@ -49,6 +49,7 @@ namespace VetHouse.App.Persistencia
                 vitalSignFound.BreathingFreq = vitalSign.BreathingFreq;
                 vitalSignFound.Temperature = vitalSign.Temperature;
                 vitalSignFound.CreatedAt = vitalSign.CreatedAt;
+                vitalSignFound.StatusHealth = vitalSign.StatusHealth;
 
                 _appContext.SaveChanges();
             }

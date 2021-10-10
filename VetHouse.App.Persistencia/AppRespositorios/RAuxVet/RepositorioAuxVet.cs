@@ -39,11 +39,11 @@ namespace VetHouse.App.Persistencia
         }
         AuxVet IRepositorioAuxVet.GetAuxVet(int idAuxVet)
         {
-            return _appContext.AuxVet.FirstOrDefault(p => p.Id == idAuxVet);
+            return _appContext.AuxVet.FirstOrDefault(av => av.Id == idAuxVet);
         }
         AuxVet IRepositorioAuxVet.UpdateAuxVet(AuxVet auxVet)
         {
-            var auxVetEncontrado = _appContext.AuxVet.FirstOrDefault(p => p.Id == auxVet.Id);
+            var auxVetEncontrado = _appContext.AuxVet.FirstOrDefault(av => av.Id == auxVet.Id);
             if (auxVetEncontrado!=null)
             {
                 auxVetEncontrado.Name=auxVet.Name;
@@ -51,6 +51,7 @@ namespace VetHouse.App.Persistencia
                 auxVetEncontrado.PhoneNumber=auxVet.PhoneNumber;
                 auxVetEncontrado.Gender=auxVet.Gender;
                 auxVetEncontrado.Email=auxVet.Email;               
+                auxVetEncontrado.DateBirth=auxVet.DateBirth;               
                 auxVetEncontrado.ProfessionalCard=auxVet.ProfessionalCard;
                 auxVetEncontrado.LaborHours=auxVet.LaborHours;
             }

@@ -5,6 +5,10 @@ namespace VetHouse.App.Persistencia
 {
     public interface IRepositorioHistory
     {
-        History GetDiagnose(int IdHistory);
+        IEnumerable<History> GetAllHistory();
+        History AddHistory(History history);
+        History UpdateHistory(History history);
+        void DeleteHistory(int idHistory);
+        History GetHistory(int idHistory);
     }
 }

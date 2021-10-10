@@ -6,10 +6,10 @@ namespace VetHouse.App.Persistencia
 {
     public interface IRepositorioCareSuggestion
     {
-        IEnumerable<CareSuggestions> GetAllCareSuggestions();
-        CareSuggestions AddCareSuggestion(CareSuggestions careSuggestion);
-        CareSuggestions UpdateCareSuggestion(CareSuggestions careSuggestion);
+        IEnumerable<CareSuggestion> GetAllCareSuggestions();
+        CareSuggestion AddCareSuggestion(CareSuggestion careSuggestion);
+        CareSuggestion UpdateCareSuggestion(CareSuggestion careSuggestion);
         void DeleteCareSuggestion(int idCareSuggestion);
-        CareSuggestions GetCareSuggestion(int idCareSuggestion);
+        CareSuggestion GetCareSuggestion(int idCareSuggestion);
     }
 }
