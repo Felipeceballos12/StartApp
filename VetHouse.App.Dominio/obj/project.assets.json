@@ -180,19 +180,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\cebal\\.nuget\\packages\\": {}
+    "C:\\Users\\rdkar\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\cebal\\OneDrive\\Documents\\Code\\MinTic-2021\\StartApp\\VetHouse.App.Dominio\\VetHouse.App.Dominio.csproj",
+      "projectUniqueName": "F:\\8. Universidad\\Misión Tic 2022\\Ciclo 3\\Desarrollo de Software\\Proyecto\\GitHub\\StartApp\\VetHouse.App.Dominio\\VetHouse.App.Dominio.csproj",
       "projectName": "VetHouse.App.Dominio",
-      "projectPath": "C:\\Users\\cebal\\OneDrive\\Documents\\Code\\MinTic-2021\\StartApp\\VetHouse.App.Dominio\\VetHouse.App.Dominio.csproj",
-      "packagesPath": "C:\\Users\\cebal\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\cebal\\OneDrive\\Documents\\Code\\MinTic-2021\\StartApp\\VetHouse.App.Dominio\\obj\\",
+      "projectPath": "F:\\8. Universidad\\Misión Tic 2022\\Ciclo 3\\Desarrollo de Software\\Proyecto\\GitHub\\StartApp\\VetHouse.App.Dominio\\VetHouse.App.Dominio.csproj",
+      "packagesPath": "C:\\Users\\rdkar\\.nuget\\packages\\",
+      "outputPath": "F:\\8. Universidad\\Misión Tic 2022\\Ciclo 3\\Desarrollo de Software\\Proyecto\\GitHub\\StartApp\\VetHouse.App.Dominio\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\cebal\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\rdkar\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
@@ -231,7 +231,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.411\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.412\\RuntimeIdentifierGraph.json"
       }
     }
   }

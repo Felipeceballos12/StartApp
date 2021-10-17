@@ -50,8 +50,7 @@ namespace VetHouse.App.Persistencia
                 PetFound.Latitude = pet.Latitude;
                 PetFound.Longitude = pet.Longitude;
                 PetFound.Weight = pet.Weight;
-                PetFound.Age = pet.Age;
-
+                PetFound.DateBirth = pet.DateBirth;
                 _appContext.SaveChanges();
             }
             return PetFound;

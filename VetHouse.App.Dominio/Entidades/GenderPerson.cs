@@ -1,6 +1,6 @@
 namespace VetHouse.App.Dominio
 {
-    public enum Gender
+    public enum GenderPerson
     {
         Masculino,
         Femenino,

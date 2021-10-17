@@ -1,7 +1,7 @@
 namespace VetHouse.App.Dominio
 {
-    public class Owner : Persons
+    public class Owner : Person
     {
-        public string CC {get;set;}
+        
     }
 }

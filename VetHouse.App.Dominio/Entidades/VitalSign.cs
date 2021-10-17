@@ -9,5 +9,7 @@ namespace VetHouse.App.Dominio
         public float HeartRate {get;set;}
         public float Temperature {get;set;}
         public float BreathingFreq {get;set;}
+        public TypeStatusHealth StatusHealth {get;set;}
+
     }
 }

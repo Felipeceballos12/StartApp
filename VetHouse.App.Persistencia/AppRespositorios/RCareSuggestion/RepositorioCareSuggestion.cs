@@ -13,7 +13,7 @@ namespace VetHouse.App.Persistencia
             _appContext = appContext;
         }
 
-        CareSuggestions IRepositorioCareSuggestion.AddCareSuggestion(CareSuggestions careSuggestion)
+        CareSuggestion IRepositorioCareSuggestion.AddCareSuggestion(CareSuggestion careSuggestion)
         {
             var addCareSuggestion = _appContext.CareSuggestion.Add(careSuggestion);
 
@@ -34,12 +34,12 @@ namespace VetHouse.App.Persistencia
             _appContext.SaveChanges();
         }
 
-        IEnumerable<CareSuggestions> IRepositorioCareSuggestion.GetAllCareSuggestions()
+        IEnumerable<CareSuggestion> IRepositorioCareSuggestion.GetAllCareSuggestions()
         {
             return _appContext.CareSuggestion;
         }
 
-        CareSuggestions IRepositorioCareSuggestion.UpdateCareSuggestion(CareSuggestions careSuggestion)
+        CareSuggestion IRepositorioCareSuggestion.UpdateCareSuggestion(CareSuggestion careSuggestion)
         {
             var careSuggestionFound = _appContext.CareSuggestion.FirstOrDefault(cs => cs.Id == careSuggestion.Id);
 
@@ -54,7 +54,7 @@ namespace VetHouse.App.Persistencia
             return careSuggestionFound;
         }
 
-        CareSuggestions IRepositorioCareSuggestion.GetCareSuggestion(int idCareSuggestion)
+        CareSuggestion IRepositorioCareSuggestion.GetCareSuggestion(int idCareSuggestion)
         {
             return _appContext.CareSuggestion.FirstOrDefault(cs => cs.Id == idCareSuggestion);
         }
