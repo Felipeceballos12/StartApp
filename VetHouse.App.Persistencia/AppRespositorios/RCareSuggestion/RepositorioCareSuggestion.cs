@@ -6,12 +6,7 @@ namespace VetHouse.App.Persistencia
 {
     public class RepositorioCareSuggestion : IRepositorioCareSuggestion
     {
-        private readonly AppContext _appContext;
-
-        public RepositorioCareSuggestion(AppContext appContext)
-        {
-            _appContext = appContext;
-        }
+        private readonly AppContext _appContext = new AppContext();
 
         CareSuggestion IRepositorioCareSuggestion.AddCareSuggestion(CareSuggestion careSuggestion)
         {
@@ -23,7 +18,7 @@ namespace VetHouse.App.Persistencia
 
         void IRepositorioCareSuggestion.DeleteCareSuggestion(int idCareSuggestion)
         {
-            var careSuggestionFound = _appContext.CareSuggestion.FirstOrDefault(cs => cs.Id == idCareSuggestion);
+            var careSuggestionFound = _appContext.CareSuggestion.Find(idCareSuggestion);
 
             if (careSuggestionFound == null)
             {
@@ -41,7 +36,7 @@ namespace VetHouse.App.Persistencia
 
         CareSuggestion IRepositorioCareSuggestion.UpdateCareSuggestion(CareSuggestion careSuggestion)
         {
-            var careSuggestionFound = _appContext.CareSuggestion.FirstOrDefault(cs => cs.Id == careSuggestion.Id);
+            var careSuggestionFound = _appContext.CareSuggestion.Find(careSuggestion.Id);
 
             if (careSuggestionFound != null)
             {
@@ -56,7 +51,7 @@ namespace VetHouse.App.Persistencia
 
         CareSuggestion IRepositorioCareSuggestion.GetCareSuggestion(int idCareSuggestion)
         {
-            return _appContext.CareSuggestion.FirstOrDefault(cs => cs.Id == idCareSuggestion);
+            return _appContext.CareSuggestion.Find(idCareSuggestion);
         }
     }
 }

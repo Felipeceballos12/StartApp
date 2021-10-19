@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using VetHouse.App.Dominio;
 
+
 namespace VetHouse.App.Persistencia
 {
     public class RepositorioAuxVet : IRepositorioAuxVet
@@ -9,16 +10,13 @@ namespace VetHouse.App.Persistencia
         /// <summary>
         /// Referencia al contexto del AuxVet
         /// </summary>
-        private readonly AppContext _appContext;
+        private readonly AppContext _appContext = new AppContext();
         /// <summary>
         /// Metodo constructor utiliza
         /// Inyeccion de dependencia para indicar el contexto a utilizar 
         /// </summary>
         ///<param name= "appContext"></param>//
-        public RepositorioAuxVet (AppContext appContext)
-        {
-            _appContext=appContext;
-        }
+        
         AuxVet IRepositorioAuxVet.AddAuxVet(AuxVet auxVet)
         {
             var auxVetAdicionado = _appContext.AuxVet.Add(auxVet);
@@ -27,7 +25,7 @@ namespace VetHouse.App.Persistencia
         }
         void IRepositorioAuxVet.DeleteAuxVet(int idAuxVet)
         {
-            var auxVetEncontrado = _appContext.AuxVet.FirstOrDefault(av => av.Id == idAuxVet);
+            var auxVetEncontrado = _appContext.AuxVet.Find(idAuxVet);
             if (auxVetEncontrado == null)
                 return;
             _appContext.AuxVet.Remove(auxVetEncontrado);
@@ -39,11 +37,11 @@ namespace VetHouse.App.Persistencia
         }
         AuxVet IRepositorioAuxVet.GetAuxVet(int idAuxVet)
         {
-            return _appContext.AuxVet.FirstOrDefault(av => av.Id == idAuxVet);
+            return _appContext.AuxVet.Find(idAuxVet);
         }
         AuxVet IRepositorioAuxVet.UpdateAuxVet(AuxVet auxVet)
         {
-            var auxVetEncontrado = _appContext.AuxVet.FirstOrDefault(av => av.Id == auxVet.Id);
+            var auxVetEncontrado = _appContext.AuxVet.Find(auxVet.Id);
             if (auxVetEncontrado!=null)
             {
                 auxVetEncontrado.Name=auxVet.Name;

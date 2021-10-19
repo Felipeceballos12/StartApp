@@ -12,7 +12,6 @@ namespace VetHouse.App.Dominio
         public float Weight {get;set;}
         public System.DateTime DateBirth {get;set;}
         public GenderPet Gender {get;set;}
-        public Vet Vet {get;set;}
         public AuxVet AuxVet {get;set;}
         public Owner Owner {get;set;}
         public History History {get;set;}

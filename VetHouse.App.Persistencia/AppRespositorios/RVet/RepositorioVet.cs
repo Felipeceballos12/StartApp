@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using VetHouse.App.Dominio;
+using Microsoft.EntityFrameworkCore;
 
 namespace VetHouse.App.Persistencia
 {
@@ -9,16 +10,14 @@ namespace VetHouse.App.Persistencia
         /// <summary>
         /// Referencia al contexto del Vet
         /// </summary>
-        private readonly AppContext _appContext;
+        private readonly AppContext _appContext = new AppContext()
+        ;
         /// <summary>
         /// Metodo constructor utiliza
         /// Inyeccion de dependencia para indicar el contexto a utilizar 
         /// </summary>
         ///<param name= "appContext"></param>//
-        public RepositorioVet (AppContext appContext)
-        {
-            _appContext=appContext;
-        }
+      
         Vet IRepositorioVet.AddVet(Vet vet)
         {
             var vetAdicionado = _appContext.Vet.Add(vet);
@@ -27,7 +26,7 @@ namespace VetHouse.App.Persistencia
         }
         void IRepositorioVet.DeleteVet(int idVet)
         {
-            var vetEncontrado = _appContext.Vet.FirstOrDefault(v => v.Id == idVet);
+            var vetEncontrado = _appContext.Vet.Find(idVet);
             if (vetEncontrado == null)
                 return;
             _appContext.Vet.Remove(vetEncontrado);
@@ -35,15 +34,17 @@ namespace VetHouse.App.Persistencia
         }
         IEnumerable<Vet> IRepositorioVet.GetAllVet()
         {
-            return _appContext.Vet;
+            return _appContext.Vet
+            .Include (v => v.Pets)
+            .ToList();        
         }
         Vet IRepositorioVet.GetVet(int idVet)
         {
-            return _appContext.Vet.FirstOrDefault(v => v.Id == idVet);
+            return _appContext.Vet.Find(idVet);
         }
         Vet IRepositorioVet.UpdateVet(Vet vet)
         {
-            var vetEncontrado = _appContext.Vet.FirstOrDefault(v => v.Id == vet.Id);
+            var vetEncontrado = _appContext.Vet.Find(vet.Id);
             if (vetEncontrado!=null)
             {
                 vetEncontrado.Name=vet.Name;
@@ -58,5 +59,50 @@ namespace VetHouse.App.Persistencia
             }
             return vetEncontrado;
         }
+
+        Pet IRepositorioVet.AssignPet(int idVet, int idPet)
+        {
+            var vetFound = _appContext.Vet.Find(idVet);
+            var petFound = _appContext.Pet.Find(idPet);
+
+            if (vetFound != null)
+            {
+                if (vetFound.Pets != null)
+                {
+                    vetFound.Pets.Add(petFound);
+                    _appContext.SaveChanges();
+                }
+                else
+                {
+              
+                    vetFound.Pets = new List<Pet>();
+                    vetFound.Pets.Add(petFound);
+                    _appContext.SaveChanges();
+                }
+
+                var vetFound2 = _appContext.Vet.Find(vetFound.Id);
+
+                if (vetFound2 != null)
+                {
+                    vetFound2.Name = vetFound.Name;
+                    vetFound2.Surname = vetFound.Surname;
+                    vetFound2.PhoneNumber = vetFound.PhoneNumber;
+                    vetFound2.Gender = vetFound.Gender;
+                    vetFound2.Email = vetFound.Email;
+                    vetFound2.DateBirth = vetFound.DateBirth;
+                    vetFound2.RegisterRethus = vetFound.RegisterRethus;
+                    vetFound2.Specialty = vetFound.Specialty;
+
+                    _appContext.SaveChanges();
+
+                    return petFound;
+                }
+            }
+
+            return null;
+        }
+
+
+
     }
 }

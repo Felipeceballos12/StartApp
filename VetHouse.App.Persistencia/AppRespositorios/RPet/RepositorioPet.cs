@@ -1,17 +1,14 @@
 using System.Collections.Generic;
 using VetHouse.App.Dominio;
 using System.Linq;
+using Microsoft.EntityFrameworkCore;
 
 namespace VetHouse.App.Persistencia
 {
     public class RepositorioPet : IRepositorioPet
     {
-        private readonly AppContext _appContext;
+        private readonly AppContext _appContext = new AppContext();
 
-        public RepositorioPet(AppContext appContext)
-        {
-            _appContext = appContext;
-        }
         Pet IRepositorioPet.AddPet (Pet pet)
         {
             var PetAdded = _appContext.Pet.Add(pet);
@@ -21,7 +18,7 @@ namespace VetHouse.App.Persistencia
 
         void IRepositorioPet.DeletePet(int IdPet)
         {
-            var PetFound = _appContext.Pet.FirstOrDefault(p => p.Id == IdPet);
+            var PetFound = _appContext.Pet.Find(IdPet);
             if(PetFound==null)
                 return;
             _appContext.Pet.Remove(PetFound);
@@ -30,17 +27,21 @@ namespace VetHouse.App.Persistencia
 
         IEnumerable<Pet> IRepositorioPet.GetAllPets()
         {
-            return _appContext.Pet;
+            return _appContext.Pet
+            .Include (p => p.AuxVet)
+            .Include (p => p.Owner)
+            .Include (p => p.History)
+            .ToList();            
         }
 
         Pet IRepositorioPet.GetPet(int IdPet)
         {
-            return _appContext.Pet.FirstOrDefault(p => p.Id == IdPet);
+            return _appContext.Pet.Find(IdPet);
         }
 
         Pet IRepositorioPet.UpdatePet(Pet pet)
         {
-            var PetFound = _appContext.Pet.FirstOrDefault(p => p.Id == pet.Id);
+            var PetFound = _appContext.Pet.Find(pet.Id);
             if (PetFound!=null)
             {
                 PetFound.Name = pet.Name;

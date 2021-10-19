@@ -10,5 +10,6 @@ namespace VetHouse.App.Persistencia
         Vet UpdateVet(Vet vet);
         void DeleteVet(int idVet);
         Vet GetVet(int idVet);
+        Pet AssignPet(int idVet, int idPet);
     }
 }

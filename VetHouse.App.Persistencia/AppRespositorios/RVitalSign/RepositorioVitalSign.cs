@@ -2,16 +2,12 @@ using System.Collections.Generic;
 using System.Linq;
 using VetHouse.App.Dominio;
 
+
 namespace VetHouse.App.Persistencia
 {
     public class RepositorioVitalSign : IRepositorioVitalSign
     {
-        private readonly AppContext _appContext;
-
-        public RepositorioVitalSign(AppContext appContext)
-        {
-            _appContext = appContext;
-        }
+        private readonly AppContext _appContext = new AppContext();
 
         VitalSign IRepositorioVitalSign.AddVitalSign(VitalSign vitalSign)
         {
@@ -23,7 +19,7 @@ namespace VetHouse.App.Persistencia
 
         void IRepositorioVitalSign.DeleteVitalSign(int idVitalSign)
         {
-            var vitalSignFound = _appContext.VitalSign.FirstOrDefault(vs => vs.Id == idVitalSign);
+            var vitalSignFound = _appContext.VitalSign.Find(idVitalSign);
 
             if (vitalSignFound == null)
             {
@@ -41,7 +37,7 @@ namespace VetHouse.App.Persistencia
 
         VitalSign IRepositorioVitalSign.UpdateVitalSign(VitalSign vitalSign)
         {
-            var vitalSignFound = _appContext.VitalSign.FirstOrDefault(vs => vs.Id == vitalSign.Id);
+            var vitalSignFound = _appContext.VitalSign.Find(vitalSign.Id);
 
             if (vitalSignFound != null)
             {
@@ -59,7 +55,7 @@ namespace VetHouse.App.Persistencia
 
         VitalSign IRepositorioVitalSign.GetVitalSign(int idVitalSign)
         {
-            return _appContext.VitalSign.FirstOrDefault(vs => vs.Id == idVitalSign);
+            return _appContext.VitalSign.Find(idVitalSign);
         }
     }
 }

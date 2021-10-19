@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using VetHouse.App.Dominio;
 
+
 namespace VetHouse.App.Persistencia
 {
     public class RepositorioOwner : IRepositorioOwner
@@ -9,16 +10,12 @@ namespace VetHouse.App.Persistencia
         /// <summary>
         /// Referencia al contexto del Owner
         /// </summary>
-        private readonly AppContext _appContext;
+        private readonly AppContext _appContext = new AppContext();
         /// <summary>
         /// Metodo constructor utiliza
         /// Inyeccion de dependencia para indicar el contexto a utilizar 
         /// </summary>
         ///<param name= "appContext"></param>//
-        public RepositorioOwner (AppContext appContext)
-        {
-            _appContext=appContext;
-        }
         Owner IRepositorioOwner.AddOwner(Owner owner)
         {
             var ownerAdicionado = _appContext.Owner.Add(owner);
@@ -27,7 +24,7 @@ namespace VetHouse.App.Persistencia
         }
         void IRepositorioOwner.DeleteOwner(int idOwner)
         {
-            var ownerEncontrado = _appContext.Owner.FirstOrDefault(o => o.Id == idOwner);
+            var ownerEncontrado = _appContext.Owner.Find(idOwner);
             if (ownerEncontrado == null)
                 return;
             _appContext.Owner.Remove(ownerEncontrado);
@@ -39,11 +36,11 @@ namespace VetHouse.App.Persistencia
         }
         Owner IRepositorioOwner.GetOwner(int idOwner)
         {
-            return _appContext.Owner.FirstOrDefault(o => o.Id == idOwner);
+            return _appContext.Owner.Find(idOwner);
         }
         Owner IRepositorioOwner.UpdateOwner(Owner owner)
         {
-            var ownerEncontrado = _appContext.Owner.FirstOrDefault(o => o.Id == owner.Id);
+            var ownerEncontrado = _appContext.Owner.Find(owner.Id);
             if (ownerEncontrado!=null)
             {
                 ownerEncontrado.Name=owner.Name;
